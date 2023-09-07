@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PigGame</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,700" rel="stylesheet">
+</head>
+
+    <body>
+
+        <h1>the pig game</h1>
+        <div class="container">
+            <div class="container-top-left player-0 active-player-top">
+                <p class="active-player-text">Roll the dice</p>
+            </div>
+            <div class="container-top-right player-1">
+                <p class="active-player-text">Roll the dice</p>
+            </div>
+            <div id="player-0" class="container--left   active-player">
+                <p class="player clearfix">player 1</p>
+                <p class="p0-winner hidden">winner!</p>
+                <div class="current-score-container">
+                    <p class="current-score-one">current score</p>
+                    <p class="p0-current-score">0</p>
+                </div>
+                <div class="total-score-container">
+                    <p class="total-score-one">total score</p>
+                    <p class="p0-total-score">0</p>
+                </div>
+            </div>
+            <div id="player-1" class="container--right">
+                <p class="player clearfix">player 2</p>
+                <p class="p1-winner hidden">winner!</p>
+                <div class="total-score-container">
+                    <p class="total-score-two">total score</p>
+                    <p class="p1-total-score">0</p>
+                </div>
+                <div class="current-score-container">
+                    <p class="current-score-two">current score</p>
+                    <p class="p1-current-score">0</p>
+                </div>
+            </div>
+
+            <div id="btn-hold">
+                <i class="fas fa-stopwatch">&nbsp;&nbsp;&nbsp;&nbsp;Hold</i>
+            </div>
+            <button id="btn-roll">
+                <i class="fas fa-dice">&nbsp;&nbsp;&nbsp;&nbsp;Roll</i>
+            </button>
+            <div id="btn-reset">
+                <i class="fas fa-undo-alt">&nbsp;&nbsp;&nbsp;Restart</i>
+            </div>
+
+            <div class="dice ">
+                <img class="w-75 dices hidden" src="dice-1-01.png" alt="">
+            </div>
+
+        </div>
+        <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
