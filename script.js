@@ -58,7 +58,14 @@ document.querySelector('#btn-hold').addEventListener('click', () => {
 
 document.querySelector('#btn-reset').addEventListener('click', () => {
 
-    document.querySelector(`.p${activeplayer}-winner`).classList.add('hidden');
+    document.querySelector(".p0-current-score").innerHTML = 0;
+    document.querySelector(".p1-current-score").innerHTML = 0;
+    document.querySelector(".p0-total-score").innerHTML = 0;
+    document.querySelector(".p1-total-score").innerHTML = 0;
+    document.querySelector(`.p0-winner`).classList.add('hidden');
+    document.querySelector(`.p1-winner`).classList.add('hidden');
+
     isPlaying = true;
+    alert("Game Have been Restarted ! ")
 
 });
